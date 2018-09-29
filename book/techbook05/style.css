@@ -1,0 +1,150 @@
+html {
+
+}
+body {
+  margin: 0;
+  font-family: MyYuGothic, "Meiryo", sans-serif;
+}
+
+.face {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 8rem min-content minmax(min-content, 1fr) min-content;
+  grid-template-areas: "a b1" "a b2" "a b3" "a b4";
+  overflow: hidden;
+}
+
+.face .cover {
+  grid-area: a;
+  margin: 2rem 5rem 0 1rem;
+  text-align: right;
+}
+.face .cover img {
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.face .header {
+  background: #b25636;
+  color: white;
+  position: relative;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+.face .header::after {
+  background: #b25636;
+  content: '';
+  display: block;
+  width: 660px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100000px;
+  left: -5000px;
+}
+.face .header .wrapper {
+  border-left: 3px solid white;
+  padding: .5rem 0 .5rem .5rem;
+}
+.face .header h1 {
+  margin: 0;
+  line-height: 1;
+}
+
+
+.face .buy {
+  display: flex;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.face .buy > * {
+  margin: 1rem;
+}
+.face .buy .title {}
+.face .buy .price {
+  font-size: 1.8rem;
+  padding: 0 1rem;
+}
+.face .buy .links {}
+.face .buy .links > a {
+  display: block;
+  background: #29abe2;
+  color: white;
+  margin-top: .2rem;
+  transition: 200ms background ease-in-out;
+}
+.face .buy .links > a:link {
+  text-decoration: none;
+}
+.face .buy .links > a:hover {
+  background: #105b72;
+}
+
+.main {
+  max-width: 1160px;
+  margin: auto;
+  margin-top: 3rem;
+}
+.main > * {
+  padding: 1rem;
+}
+.main h2 {
+  text-align: center;
+  margin: 1rem 0 3rem;
+  font-size: 2rem
+}
+
+.article-list {
+  background: #eee;
+}
+
+.article-list .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.article-list article {
+  width: 50%;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-size: .9rem;
+}
+.article-list article .inner {
+  background: #f9f9f9;
+  padding: 1rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+.article-list article header {
+  line-height: 1;
+}
+.article-list article .title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.article-list article .author {
+  font-size: 1rem;
+  color: #777;
+}
+.article-list article ol {
+  line-height: 1.3;
+  font-size: .9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 5rem 0;
+  margin-top: 5rem;
+  color: #b25636;
+}
+
+@font-face {
+	font-family: 'MyYuGothic';
+	font-weight: normal;
+	src: local('YuGothic-Medium'),
+       local('Yu Gothic Medium'),
+	     local('Yu Gothic'),
+       local('YuGothic');
+}
