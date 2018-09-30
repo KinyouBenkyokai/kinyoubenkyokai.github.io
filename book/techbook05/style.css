@@ -23,6 +23,7 @@ body {
   width: 100%;
   max-width: 500px;
   min-width: 300px;
+  box-shadow: 0 0 15px rgba(178, 86, 54, 0.2);
 }
 
 .face .header {
