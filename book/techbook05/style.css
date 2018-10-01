@@ -76,6 +76,7 @@ body {
   color: white;
   margin-top: .2rem;
   transition: 200ms background ease-in-out;
+  padding: 0 0.7rem;
 }
 .face .buy .links > a:link {
   text-decoration: none;
