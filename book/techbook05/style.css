@@ -84,14 +84,20 @@ body {
 .face .buy .links > a:hover {
   background: #105b72;
 }
+.face ul {
+  padding-left: 1rem;
+}
+
 
 .main {
-  max-width: 1160px;
-  margin: auto;
   margin-top: 3rem;
 }
 .main > * {
   padding: 1rem;
+}
+.main .wrapper {
+  max-width: 1160px;
+  margin: auto;
 }
 .main h2 {
   text-align: center;
